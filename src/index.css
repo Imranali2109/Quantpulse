@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --paper: #EDE7DA;
+  --paper-dim: #E2DCCC;
+  --card: #F6F2E8;
+  --ink: #17140F;
+  --ink-70: #4A4438;
+  --ink-45: #837B69;
+  --ink-25: #B5AD9A;
+  --rule: #C9C0A9;
+  --bull: #1B3A5C;
+  --bull-wash: #DCE3E9;
+  --bear: #7A1F14;
+  --bear-wash: #EBDAD3;
+  --signal: #B8452F;
+}
+
+@theme {
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-serif: 'Fraunces', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-70: var(--ink-70);
+  --color-ink-45: var(--ink-45);
+  --color-ink-25: var(--ink-25);
+  --color-rule: var(--rule);
+  --color-bull: var(--bull);
+  --color-bull-wash: var(--bull-wash);
+  --color-bear: var(--bear);
+  --color-bear-wash: var(--bear-wash);
+  --color-signal: var(--signal);
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 9999;
+}

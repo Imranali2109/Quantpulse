@@ -1,0 +1,6 @@
+{
+  "name": "QuantPulse",
+  "description": "An AI-Powered Financial Intelligence Platform offering live market data, technical analysis, visual charts, and AI-generated insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
