@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# QuantPulse
 
-# Run and deploy your AI Studio app
+AI-powered stock analysis and market intelligence platform.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/3672720f-2199-4303-bc9d-f9cf544228cb
+- Real-time stock data
+- Technical indicators
+- Momentum analysis
+- Volatility analysis
+- Trend analysis
+- Convergence scoring
+- Street Sheet
+- Watchlist
+- Signal history
+- Market analysis
+- India and US market support
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+Frontend:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
+Backend:
+- Node.js
+- Express
+- TypeScript
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Data:
+- Yahoo Finance
+- SQLite
+
+AI:
+- Google Gemini
+- Tavily
+
+## Getting Started
+
+npm install
+
+Create .env.local
+
+npm run dev
